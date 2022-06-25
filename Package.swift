@@ -9,6 +9,9 @@ let package = Package(
         .iOS(.v15),
         .macOS(.v12)
     ],
+    products: [
+        .plugin(name: "SwiftFormatPlugin", targets: ["SwiftFormatPlugin"])
+    ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
